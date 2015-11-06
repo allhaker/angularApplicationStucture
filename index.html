@@ -15,14 +15,23 @@
   <script type="text/javascript" src="js/model.js"></script>
 </head>
 
-<body style="text-align:center" ng-controller="mainController" ng-init="executeTestGet()">
-  <div class="container" id="title">
+<body style="text-align:center">
+  <div class="container" id="title" ng-controller="mainController" ng-init="executeTestGet()">
     <h1>Test AngularJS API</h1>
     <hr>
+    <div ng-repeat="test in testData">
+      <p>
+        ID {{test.id}}
+      </p>
+      <p>
+        NAME {{test.name}}
+      </p>
+    </div>
+
   </div>
   <div id="content">
       <ng-view></ng-view>
-  </div>  
+  </div>
 </body>
 
 </html>

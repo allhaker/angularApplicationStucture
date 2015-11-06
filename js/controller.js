@@ -4,7 +4,7 @@ testController.controller('mainController', function mainController($scope, fact
   $scope.executeTestGet = function() {
     factoryName.method1("no data", function (error, data) {
       if (!error) {
-        $scope.testData = data.items;
+        $scope.testData = data;
         console.log($scope.testData);
       }
     });
