@@ -15,7 +15,7 @@ testService.factory('factoryName', function factoryName($http) {
         });
     };
     var test2 = function () {
-      alert("I am a test");
+  
     }
     return {
       method1: testGet,
