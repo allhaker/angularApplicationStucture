@@ -2,7 +2,7 @@ var testService = angular.module('testService', []);
 
 testService.factory('factoryName', function factoryName($http) {
     var testGet = function(query, callback) {
-      $http.get('https://api.github.com/search/repositories', {
+      $http.get('http://testapp1withtotalyuniquename.eu-gb.mybluemix.net/', {
         /*  params: {
             q: query
           }*/

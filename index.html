@@ -15,14 +15,14 @@
   <script type="text/javascript" src="js/model.js"></script>
 </head>
 
-<body style="text-align:center" ng-controller="mainController">
+<body style="text-align:center" ng-controller="mainController" ng-init="executeTestGet()">
   <div class="container" id="title">
     <h1>Test AngularJS API</h1>
     <hr>
   </div>
-  <div class="container" style="max-width:700px; margin: 0 auto 0 auto">
-
-  </div>
+  <div id="content">
+      <ng-view></ng-view>
+  </div>  
 </body>
 
 </html>

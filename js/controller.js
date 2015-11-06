@@ -5,6 +5,7 @@ testController.controller('mainController', function mainController($scope, fact
     factoryName.method1("no data", function (error, data) {
       if (!error) {
         $scope.testData = data.items;
+        console.log($scope.testData);
       }
     });
   }
